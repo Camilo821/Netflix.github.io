@@ -1,4 +1,4 @@
-@import url(fuentes.css);
+@import url(fuents.css);
 :root {
     --rojo: #E50914;
     --fondo: #141414;
@@ -10,7 +10,7 @@
 }
 body{
     background: var(--fondo);
-    font-family: OpenSans;
+    font-family: 'OpenSans';
 }
 .container {
     width: 98%;
@@ -54,5 +54,35 @@ header nav a.activo{
 .pelicula-principal .container{
     margin: 0 auto;
     margin-bottom: 6.25em;
-    
+}
+.pelicula-principal .titulo{
+    font-weight: 600;
+    font-size: 3.12em;
+    margin-bottom: 0.4em;
+    font-family: OpenSansBold;
+}
+.pelicula-principal .descripcion {
+    font-weight: normal;
+    font-size: 1em;
+    line-height: 1.75em;
+    max-width: 50%;
+    margin-bottom: 1.25em;
+}
+.pelicula-principal .boton {
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    border-radius: 0.31em;
+    padding: 0.93em 1.87em;
+    color: #ffffff;
+    margin-right: 1.25em;
+    cursor: pointer;
+    transition: .3s ease all;
+    font-size: 1.12em;
+}
+.pelicula-principal .boton i{
+    margin-right: 1.25em;
+}
+.pelicula-principal .boton:hover{
+    background: #ffffff;
+    color: #000000;
 }
