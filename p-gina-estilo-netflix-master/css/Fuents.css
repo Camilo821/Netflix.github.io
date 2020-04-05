@@ -1,0 +1,12 @@
+@font-face{
+    font-family: OpenSans;
+    src: url(../Fuentes/Open_Sans/OpenSans-Regular.ttf);
+}
+@font-face{
+    font-family: Bebas;
+    src: url(../Fuentes/Bebas_Neue/BebasNeue-Regular.tt);
+}
+@font-face{
+    font-family: OpenSansBold;
+    src: url(../Fuentes/Open_Sans/OpenSans-SemiBold.ttf);
+}

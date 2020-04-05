@@ -1,0 +1,58 @@
+@import url(fuentes.css);
+:root {
+    --rojo: #E50914;
+    --fondo: #141414;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: var(--fondo);
+    font-family: OpenSans;
+}
+.container {
+    width: 98%;
+    margin: auto;
+}
+header {
+    padding: 30px 0;
+}
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logo {
+    font-family: Bebas;
+    font-weight: normal;
+    color: var(--rojo);
+    font-size: 40px;
+}
+header nav a{
+    color: #AAA;
+    text-decoration: none;
+    margin-right: 20px;
+}
+header nav a:hover,
+header nav a.activo{
+    color: #ffffff;
+}
+/* --- --- ---Pelicula Principal--- --- ---*/
+.pelicula-principal{
+    font-size: 16px;
+    min-height: 40.62em;
+    color: #ffffff;
+    background:linear-gradient(rgba(0, 0, 0, .50),rgba(0, 0, 0, .50)), url(../img/backdrop.jpg);
+    background-position: center center;
+    background-size: cover;
+    margin-bottom: 3.12em;
+    display: flex;
+    align-items: flex-end;
+}
+.pelicula-principal .container{
+    margin: 0 auto;
+    margin-bottom: 6.25em;
+    
+}
