@@ -153,9 +153,17 @@ header nav a.activo{
 	flex-wrap: nowrap;
 }
 .peliculas-recomendadas .contenedor-carousel .carousel .pelicula{
-    width: 20%;
+    min-width: 20%;
     transition: .3s ease all;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3)
+}
+.peliculas-recomendadas .contenedor-carousel .carousel .pelicula img{
+    width: 100%;
+    vertical-align: top;
+}
+.peliculas-recomendadas .contenedor-carousel .carousel .pelicula.hover{
+    transform: scale(1.2);
+    transform-origin: top;
 }
 @media screen and (max-width: 800px){
     header .logo{
@@ -171,5 +179,18 @@ header nav a.activo{
     }
     .pelicula-principal .descripcion{
         max-width: 100%;
+    }
+    .peliculas-recomendadas .contenedor-carousel{
+        overflow: visible;
+    }
+    .peliculas-recomendadas .contenedor-carousel .carousel{
+        display: grid;
+        grid-template-columns: repeat(3 , 1fr);
+        gap: 20px;
+    }
+    .peliculas-recomendadas .indicadores,
+    .peliculas-recomendadas .flecha-izquierda,
+    .peliculas-recomendadas .flecha-derecha{
+        display: none;
     }
 }
