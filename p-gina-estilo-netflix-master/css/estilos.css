@@ -11,6 +11,7 @@
 body{
     background: var(--fondo);
     font-family: 'OpenSans';
+    scroll-behavior: smooth;
 }
 .container {
     width: 98%;
@@ -85,6 +86,76 @@ header nav a.activo{
 .pelicula-principal .boton:hover{
     background: #ffffff;
     color: #000000;
+}
+/* --- --- ---Carousel--- --- ---*/
+.peliculas-recomendadas{
+    margin-bottom: 70px;
+}
+.peliculas-recomendadas .contenedor-principal {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.peliculas-recomendadas .contenedor-principal .flecha-izquierda,
+.peliculas-recomendadas .contenedor-principal .flecha-derecha{
+    position: absolute;
+    border: none;
+    background: rgba(0, 0, 0, 0.3);
+    font-size: 40px;
+    height: 50%;
+    top: calc(50% - 25%);
+    line-height: 40px;
+    width: 50px;
+    color: #ffffff;
+    cursor: pointer;
+    z-index: 500;
+    transition: .2s ease all;
+}
+.peliculas-recomendadas .contenedor-principal .flecha-izquierda{
+    left: 0;
+}
+.peliculas-recomendadas .contenedor-principal .flecha-derecha{
+    right: 0;
+}
+.peliculas-recomendadas .contenedor-principal .flecha-izquierda:hover,
+.peliculas-recomendadas .contenedor-principal .flecha-derecha:hover{
+    background: rgba(0, 0, 0, 0.9)
+}
+.contenedor-titulo-controles{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+.contenedor-titulo-controles h3{
+    color: #ffffff;
+    font-size: 30px;
+}
+.contenedor-titulo-controles .indicadores button{
+    background: #ffffff;
+    height: 3px;
+    width: 10px;
+    cursor: pointer;
+    border: none;
+    margin-right: 2px;
+}
+.contenedor-titulo-controles .indicadores button:hover,
+.contenedor-titulo-controles .indicadores button.activo{
+    background: red;
+}
+.peliculas-recomendadas .contenedor-carousel{
+    width: 100%;
+    padding: 20px 0px;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+.peliculas-recomendadas .contenedor-carousel .carousel {
+	display: flex;
+	flex-wrap: nowrap;
+}
+.peliculas-recomendadas .contenedor-carousel .carousel .pelicula{
+    width: 20%;
+    transition: .3s ease all;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3)
 }
 @media screen and (max-width: 800px){
     header .logo{
